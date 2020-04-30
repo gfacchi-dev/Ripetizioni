@@ -1,0 +1,201 @@
+\title{Esercizi C++}
+\author{Giuseppe Facchi}
+\date{}
+
+\documentclass{article}
+\usepackage{listings}
+\usepackage{xcolor} % for setting colors
+\usepackage[italian]{babel}
+\usepackage{courier}
+% set the default code style
+\lstset{
+    frame=tb, % draw a frame at the top and bottom of the code block
+    tabsize=4, % tab space width
+    showstringspaces=false, % don't mark spaces in strings
+    numbers=left, % display line numbers on the left
+    commentstyle=\color{green}, % comment color
+    keywordstyle=\color{blue}, % keyword color
+    stringstyle=\color{red},
+    basicstyle=\large\ttfamily,
+    breaklines=true, 
+    framextopmargin=50pt,
+    frame=bottomline
+}
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+\vspace*{\fill}
+
+\section{Somma} Somma 10 numeri interi e comunica la somma dopo averli letti o quando viene inserito lo 0
+\begin{lstlisting}[language=C++]
+#include <iostream>
+int main()
+{
+    //Risultato
+    int somma = 0;
+
+    //Variabile di input
+    int input;
+
+    //Contatore per ciclo
+    int i = 0; 
+    do {
+        cout << "Inserisci numero" << i << ": "; 
+        cin >> input;
+        somma = somma + input;
+        i++;
+    } while(input != 0 && i < 10);
+    
+    return 0;
+}
+\end{lstlisting}
+\subsection{Prodotto} Moltiplica 10 numeri interi e comunica la somma dopo averli letti o quando viene inserito lo 0
+\pagebreak
+\section{Numeri Pari} Inserendo 10 numeri interi, calcola quanti numeri pari sono stati inseriti
+\begin{lstlisting}[language=C++]
+#include <iostream>
+int main()
+{
+    //Prendo l'input dall'utente
+    int interi[10];
+    int i = 0;
+    while(i < 10){
+        cout << "Inserisci num " << i << ": ";
+        cin >> interi[i];
+        i++;
+    }
+
+    //Calcolo Numeri Pari
+    int j = 0;
+    int numPari = 0;
+    while(j < 10){
+        if(interi[j] % 2 == 0) {
+            numPari = numPari + 1;
+        }
+        j++;
+    }
+    cout << "Inseriti " << numPari << " pari";
+    return 0;
+}
+\end{lstlisting}
+\subsection{Numeri Pari} Inserendo 10 numeri interi, stampare tutti i numeri pari
+\subsection{Numeri Pari} Inserendo 10 numeri interi, stampare tutti i numeri in posizione pari
+\pagebreak
+\section{Elevamento a Potenza} Eleva un numero intero per un esponente inserito da tastiera
+
+\begin{lstlisting}[language=C++]
+#include <iostream>
+int main()
+{
+    //Prendo l'input dall'utente
+    int numDaElevare;
+    cin >> numDaElevare;
+
+    int esponente;
+    cin >> esponente;
+
+    //Calcolo
+    int risultato;
+    if(esponente == 0) {
+        risultato = 1;
+    } else {
+        for(int i = 0; i < esponente; i++){
+            risultato = risultato * risultato;
+        }
+    }
+
+    //Stampo risultato
+    cout << "Risultato: " << risultato;
+    return 0;
+}
+\end{lstlisting}
+\pagebreak
+\section{Inversione Array} Carica da tastiera un array di 10 elementi e lo stampa invertendo i suoi elementi
+
+\begin{lstlisting}[language=C++]
+#include <iostream>
+int main()
+{
+    int numeri[10];
+    
+    //Prendo l'input dall'utente
+    for(int i = 0; i < 10; i++){
+        cout << "\nInserisci n " << i << ": ";
+        cin >> numeri[i];
+    }
+    //Stampo al contrario
+    for(int j = 10; j > 0; j--){
+        cout << numeri[j] << "\n";
+    }
+    return 0;
+}
+\end{lstlisting}
+\subsection{Copia Array} Carica da tastiera un array di 10 elementi e stampane uno contenente i valori dell'array stesso seguito dalla sua inversione
+\pagebreak
+\section{Conta tipi di input} Programma che legge 10 caratteri da tastiera e comunica quante a,b,c... sono state inserite.
+
+\begin{lstlisting}[language=C++]
+#include <iostream>
+int main()
+{
+    char caratteri[10];
+    
+    //Prendo l'input dall'utente
+    for(int i = 0; i < 10; i++){
+        cout << "\nIns car " << i << ": ";
+        cin >> caratteri[i];
+    }
+    //Conto a, b, c
+    int a, b, c;
+    for(int j = 0; j < 10; j++){
+        switch(caratteri[j]){
+            case 'a':
+                a = a + 1;
+                break;
+            case 'b':
+                b = b + 1;
+                break;
+            case 'c':
+                c = c + 1;
+                break;
+        }
+    }
+    //Stampo i risultati
+    cout << "Numero di a: " << a << "\n";
+    cout << "Numero di b: " << b << "\n";
+    cout << "Numero di c: " << c << "\n";
+    return 0;
+}
+\end{lstlisting}
+\subsection{Input non validi} Dato lo stesso esercizio invece di stampare il numero di a, b, c, stampa il numero di input non validi
+\pagebreak
+\section{Media di Tre Numeri} Dati tre numeri in input, calcolane la media
+
+\begin{lstlisting}[language=C++]
+#include <iostream>
+int main() 
+{ 
+    //Prendo l'input dall'utente
+    float v1, v2, v3;
+    cout << "Inserisci i tre voti " << "\n";
+    cin >> v1;
+    cin >> v2;
+    cin >> v3;   
+
+    //Calcolo media
+    float somma = 0;
+    float media_voti = 0;
+    somma = v1 + v2 + v3;  
+    media_voti= somma / 3;
+
+    //Stampo media
+    cout << endl << " Media voti :" << media_voti; 
+}
+\end{lstlisting}
+\vspace*{\fill}
+\clearpage
+
+\end{document}
+ 
