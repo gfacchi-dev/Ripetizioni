@@ -195,6 +195,207 @@ int main()
 }
 \end{lstlisting}
 \vspace*{\fill}
+
+\pagebreak
+\section{Vettore Random} Crea un vettore dim 20 caricalo con numeri casuali 2-17, stampalo normale e poi stampalo a rovescia
+
+\begin{lstlisting}[language=C++]
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //Dichiarazione Vettore
+    int interi[20];
+    
+    //Iterazione Vettore
+    for (int i = 0; i < 20; i++){
+        //rand() % 10 --> Numero random DA 0 A 9 
+        //rand() % 10 + offset --> Numero random DA "offset" A "9 + offset" (es. offset = 10 cosa restituisce?)
+        interi[i] = rand() % 16 + 2;
+    }
+    
+    //Iterazione Vettore
+    cout << "Valori vettore: ";
+    for (int j = 0; j < 20; j++) {
+        cout << interi[j] << " ";
+    }
+    cout << endl;
+    cout << "Valori inversi vettore: ";
+    //Iterazione Vettore a rovescio
+    for (int k = 19; k >= 0; k--) {
+        cout << interi[k] << " ";
+    }
+}
+\end{lstlisting}
+\vspace*{\fill}
+
+\pagebreak
+\section{Ordinamento vettore} Ordinamento vettore crescente
+
+\begin{lstlisting}[language=C++]
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int i, j, min, temp;
+    int a[10];
+
+    cout<<"Inserisci gli elementi:\n"; 
+    for(i = 0; i < 10; i++){
+        cin >> a[i];
+    }
+
+    for(i = 0; i < 10-1; i++)
+    {
+	    min = i;
+        for(j = i + 1; j < 10; j++)
+        	if (a[j] < a[min])
+        	     min = j;
+
+        temp = a[min];
+        a[min] = a[i];
+        a[i] = temp;
+    }
+    
+    cout<<"Array ordinato con selection sort:";
+    for(i = 0; i < 10; i++)
+	cout << " " << a[i];
+}
+\end{lstlisting}
+\vspace*{\fill}
+\pagebreak
+\section{Matrice Quadrata} Matrice quadrata di ordine 5
+
+\begin{lstlisting}[language=C++]
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int matriceQuadrata[5][5];
+
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < 5; j++){
+            if(i == j){
+                matriceQuadrata[i][j] = 2;
+            }
+            else{
+                matriceQuadrata[i][j] = 0;
+            }
+        }
+    }
+
+    //Stamparla (non ti serve)
+    for (int i = 0; i < 5; i++) 
+        for (int j = 0; j < 5; j++)           
+            cout << matriceQuadrata[i][j] << " \n"[j == 5-1]; 
+}
+\end{lstlisting}
+\vspace*{\fill}
+
+\pagebreak
+\section{Perimetro e Area maggiore} Dato lato di un quadrato e raggio di un cerchio dire quale dei due ha area maggiore e perimetro maggiore, attenzione manca qualcosa!
+
+\begin{lstlisting}[language=C++]
+#include<iostream>
+using namespace std;
+int main()
+{
+    float latoQuadrato, raggioCerchio;
+
+    cout << "Inserisci lato quadrato" << endl;
+    cin >> latoQuadrato;
+    cout << "Inserisci raggio cerchio" << endl;
+    cin >> raggioCerchio;
+
+    float aQuadrato = latoQuadrato * latoQuadrato;
+    float pQuadrato = latoQuadrato * 4;
+
+    float aCerchio = 3.14 * raggioCerchio * raggioCerchio;
+    float pCerchio = 2 * 3.14 * raggioCerchio;
+
+    if(aQuadrato > aCerchio){
+        cout << "Il quadrato ha A maggiore" << endl;
+    }
+    else {
+        cout << "Il cerchio ha A maggiore" << endl;
+    }
+    cout << "aCerchio: " << aCerchio << " aQuadrato: " << aQuadrato << endl;
+    
+    if(pQuadrato > pCerchio){
+        cout << "Il quadrato ha P maggiore" << endl;
+    }
+    else {
+        cout << "Il cerchio ha P maggiore" << endl;
+    }
+    cout << "pCerchio: " << pCerchio << " pQuadrato: " << pQuadrato << endl;
+}
+\end{lstlisting}
+\vspace*{\fill}
+
+\pagebreak
+\section{Vettore random e stampare prodotto} Crea un vettore di dim 10, caricalo casuale 6-12, stampalo e restituisci il prodotto dei suoi componenti
+
+\begin{lstlisting}[language=C++]
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int interi[10];
+    
+    for (int i = 0; i < 10; i++){
+        //rand() % 10 --> Numero random DA 0 A 9 
+        //rand() % 10 + offset --> Numero random DA "offset" A "9 + offset"
+        interi[i] = rand() % 6 + 6;
+    }
+    cout << "Valori vettore: ";
+    for (int j = 0; j < 10; j++) {
+        cout << interi[j] << " ";
+    }
+    cout << endl;
+
+    int prodotto = 1; //Perche 1?   
+    for (int k = 0; k < 10; k++){
+        prodotto = prodotto * interi[k];
+    }
+    cout << "Prodotto: " << prodotto;
+}
+\end{lstlisting}
+\vspace*{\fill}
+
+\pagebreak
+\section{Numero intero positivo e successione} Chiedere num positivo e che visualizzi la squenza dei primi 5 numeri successivi al numero dato
+
+\begin{lstlisting}[language=C++]
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    do {
+        cout << "Inserisci valore intero positivo" << endl;
+        cin >> n;
+
+        if(n < 0){
+            cout << "Valore non valido" << endl;
+        }
+    } while (n < 0);
+
+    for(int i = 1; i < 6; i++){
+        cout << n + i << " "; 
+    }
+}
+\end{lstlisting}
+\vspace*{\fill}
 \clearpage
 
 \end{document}

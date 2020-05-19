@@ -11,3 +11,9 @@
 \contentsline {section}{\numberline {5}Conta tipi di input}{6}%
 \contentsline {subsection}{\numberline {5.1}Input non validi}{6}%
 \contentsline {section}{\numberline {6}Media di Tre Numeri}{7}%
+\contentsline {section}{\numberline {7}Vettore Random}{8}%
+\contentsline {section}{\numberline {8}Ordinamento vettore}{9}%
+\contentsline {section}{\numberline {9}Matrice Quadrata}{10}%
+\contentsline {section}{\numberline {10}Perimetro e Area maggiore}{11}%
+\contentsline {section}{\numberline {11}Vettore random e stampare prodotto}{13}%
+\contentsline {section}{\numberline {12}Numero intero positivo e successione}{14}%

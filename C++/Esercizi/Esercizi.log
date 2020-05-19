@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.29)  4 FEB 2020 12:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.29)  19 MAY 2020 15:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Esercizi.tex
-(c:/Users/beppe/OneDrive/Ripetizioni/C++/Esercizi.tex
+**d:/Progetti/ripetizioni/C++/Esercizi/Esercizi.tex
+(d:/Progetti/ripetizioni/C++/Esercizi/Esercizi.tex
 LaTeX2e <2019-10-01> patch level 3
 (c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
@@ -86,7 +86,7 @@ Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count101
 ) (c:/texlive/2019/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
-) (c:/Users/beppe/OneDrive/Ripetizioni/C++/Esercizi.aux)
+) (d:/Progetti/ripetizioni/C++/Esercizi/Esercizi.aux)
 \openout1 = `Esercizi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -133,7 +133,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 26.
-(c:/Users/beppe/OneDrive/Ripetizioni/C++/Esercizi.toc
+(d:/Progetti/ripetizioni/C++/Esercizi/Esercizi.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -154,20 +154,20 @@ File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 32.
  (c:/texlive/2019/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [2] [3] [4] [5] [6] [7] (c:/Users/beppe/OneDrive/Ripetizioni/C++/Esercizi.aux) ) 
+) [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] (d:/Progetti/ripetizioni/C++/Esercizi/Esercizi.aux) ) 
 Here is how much of TeX's memory you used:
- 4014 strings out of 492164
- 51357 string characters out of 6129087
- 384834 words of memory out of 5000000
- 8381 multiletter control sequences out of 15000+600000
+ 4044 strings out of 492164
+ 51684 string characters out of 6129087
+ 385834 words of memory out of 5000000
+ 8411 multiletter control sequences out of 15000+600000
  8410 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,6n,62p,793b,1243s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,6n,62p,830b,1627s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on c:/Users/beppe/OneDrive/Ripetizioni/C++/Esercizi.pdf (7 pages, 87168 bytes).
+Output written on d:/Progetti/ripetizioni/C++/Esercizi/Esercizi.pdf (14 pages, 100100 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
