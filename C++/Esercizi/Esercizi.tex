@@ -97,12 +97,12 @@ int main()
     cin >> esponente;
 
     //Calcolo
-    int risultato;
+    int risultato = 1;
     if(esponente == 0) {
         risultato = 1;
     } else {
         for(int i = 0; i < esponente; i++){
-            risultato = risultato * risultato;
+            risultato = numDaElevare * risultato;
         }
     }
 
