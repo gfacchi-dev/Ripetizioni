@@ -1,0 +1,17 @@
+C:\Users\giuse\source\repos\formRipe\formRipe\bin\Debug\net6.0-windows\formRipe.exe
+C:\Users\giuse\source\repos\formRipe\formRipe\bin\Debug\net6.0-windows\formRipe.deps.json
+C:\Users\giuse\source\repos\formRipe\formRipe\bin\Debug\net6.0-windows\formRipe.runtimeconfig.json
+C:\Users\giuse\source\repos\formRipe\formRipe\bin\Debug\net6.0-windows\formRipe.dll
+C:\Users\giuse\source\repos\formRipe\formRipe\bin\Debug\net6.0-windows\formRipe.pdb
+C:\Users\giuse\source\repos\formRipe\formRipe\obj\Debug\net6.0-windows\formRipe.csproj.AssemblyReference.cache
+C:\Users\giuse\source\repos\formRipe\formRipe\obj\Debug\net6.0-windows\formRipe.Form1.resources
+C:\Users\giuse\source\repos\formRipe\formRipe\obj\Debug\net6.0-windows\formRipe.csproj.GenerateResource.cache
+C:\Users\giuse\source\repos\formRipe\formRipe\obj\Debug\net6.0-windows\formRipe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\giuse\source\repos\formRipe\formRipe\obj\Debug\net6.0-windows\formRipe.AssemblyInfoInputs.cache
+C:\Users\giuse\source\repos\formRipe\formRipe\obj\Debug\net6.0-windows\formRipe.AssemblyInfo.cs
+C:\Users\giuse\source\repos\formRipe\formRipe\obj\Debug\net6.0-windows\formRipe.csproj.CoreCompileInputs.cache
+C:\Users\giuse\source\repos\formRipe\formRipe\obj\Debug\net6.0-windows\formRipe.dll
+C:\Users\giuse\source\repos\formRipe\formRipe\obj\Debug\net6.0-windows\refint\formRipe.dll
+C:\Users\giuse\source\repos\formRipe\formRipe\obj\Debug\net6.0-windows\formRipe.pdb
+C:\Users\giuse\source\repos\formRipe\formRipe\obj\Debug\net6.0-windows\formRipe.genruntimeconfig.cache
+C:\Users\giuse\source\repos\formRipe\formRipe\obj\Debug\net6.0-windows\ref\formRipe.dll
